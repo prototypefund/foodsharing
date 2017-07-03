@@ -169,6 +169,14 @@ return [
         Laravel\Tinker\TinkerServiceProvider::class,
 
         /*
+         * Foodsharing Packages
+         */
+        Foodsharing\Data\DataServiceProvider::class,
+        Foodsharing\Platform\PlatformServiceProvider::class,
+
+
+
+        /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
