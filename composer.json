@@ -12,7 +12,12 @@
         {
             "type": "git",
             "url": "git@github.com:foodsharing-dev/foodsharing-data.git"
+        },
+        {
+            "type": "git",
+            "url": "git@github.com:foodsharing-dev/bootstrap.git"
         }
+
     ],
     "minimum-stability":"dev",
     "require": {
