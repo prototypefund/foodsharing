@@ -29,23 +29,17 @@ class BootstrapServiceProvider extends ServiceProvider
          */
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
 
-
-        $this->publishes([
-            __DIR__ . '/config/foodsharing.php' => config_path('foodsharing.php'),
-            __DIR__ . '/database/seeds' => database_path('seeds')
-        ]);
-
         /*
          * Publish assets
          */
         $this->publishes([
-           // __DIR__.'/homegrown/img' => public_path('/'),
-            __DIR__.'/homegrown/js' => public_path('/js'),
-            __DIR__.'/homegrown/css' => public_path('/css'),
-            __DIR__.'/homegrown/fonts' => public_path('/fonts'),
-            __DIR__.'/homegrown/robots.txt' => public_path('/robots.txt'),
-            __DIR__.'/homegrown/favicon.ico' => public_path('/favicon.ico'),
-            __DIR__.'/homegrown/cache' => public_path('/cache'),
+           // $this->get_platform_dir() . '/img' => public_path('/'),
+            $this->get_platform_dir() . '/js' => public_path('/js'),
+            $this->get_platform_dir() . '/css' => public_path('/css'),
+            $this->get_platform_dir() . '/fonts' => public_path('/fonts'),
+            $this->get_platform_dir() . '/robots.txt' => public_path('/robots.txt'),
+            $this->get_platform_dir() . '/favicon.ico' => public_path('/favicon.ico'),
+            // $this->get_platform_dir() . '/cache' => public_path('/cache'),
 
         ], 'public');
     }
@@ -58,5 +52,10 @@ class BootstrapServiceProvider extends ServiceProvider
     public function register()
     {
         $this->commands($this->commands);
+    }
+
+    private function get_platform_dir()
+    {
+        return base_path('vendor/foodsharing/platform');
     }
 }

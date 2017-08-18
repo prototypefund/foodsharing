@@ -43,10 +43,8 @@ class Minify extends Command
          * call old minify script and minify files in old directory
          */
         $this->line('minify css and js files...');
-        chdir(__DIR__ . DIRECTORY_SEPARATOR .
-            '..' . DIRECTORY_SEPARATOR .
-            'homegrown' . DIRECTORY_SEPARATOR .
-            'lib' . DIRECTORY_SEPARATOR . 'minify'
+        chdir($this->get_platform_dir() .
+            '/lib' . DIRECTORY_SEPARATOR . 'minify'
         );
         $output = shell_exec('./min.php');
         $this->info('minified!');
@@ -61,5 +59,10 @@ class Minify extends Command
             '--tag' => 'public'
         ]);
         $this->info('success!');
+    }
+
+    private function get_platform_dir()
+    {
+        return base_path('vendor/foodsharing/platform');
     }
 }
