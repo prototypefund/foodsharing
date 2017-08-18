@@ -17,7 +17,7 @@ class CreateFsMailboxTable extends Migration {
 			$table->increments('id');
 			$table->string('name', 50)->nullable()->unique('email_unique');
 			$table->boolean('member')->default(0)->index('member');
-			$table->dateTime('last_access');
+			$table->dateTime('last_access')->nullable();
 		});
 	}
 

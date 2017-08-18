@@ -255,7 +255,7 @@ function fs_filepointer($file) {
         /*
          * later handle error with old app
          */
-        //throw $e;
+        throw $e;
 
         header('Location: /');
         exit();
