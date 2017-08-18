@@ -2,7 +2,7 @@
 
 use Foodsharing\Data\Models\Foodsaver;
 use Foodsharing\Data\Repository;
-use Foodsharing\Platform\Refactor\Helper;
+use Foodsharing\Refactor\Helper;
 
 class FoodsaverRepo extends Repository {
 

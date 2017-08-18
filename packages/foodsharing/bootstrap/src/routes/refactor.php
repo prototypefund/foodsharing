@@ -6,11 +6,13 @@
  */
 Route::group([
     'prefix' => 'old',
-    'namespace' => '\\Foodsharing\\Platform\\Refactor\\Http\\Controllers'],
-    function () {
+    'namespace' => '\\Foodsharing\\Refactor\\Http\\Controllers'],
+    function ()
+    {
 
         /*
          * route to get user specific searchindex json as json file
          */
         Route::get('searchindex/{token}','SearchindexController@getJson');
-});
+    }
+);

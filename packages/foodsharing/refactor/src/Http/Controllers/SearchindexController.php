@@ -1,5 +1,5 @@
 <?php
-namespace Foodsharing\Platform\Refactor\Http\Controllers;
+namespace Foodsharing\Refactor\Http\Controllers;
 
 use Illuminate\Support\Facades\Cache;
 

@@ -1,5 +1,5 @@
 <?php
-namespace Foodsharing\Platform\Refactor;
+namespace Foodsharing\Refactor;
 
 class Helper {
 
@@ -15,12 +15,19 @@ class Helper {
     /*
      * in some places we need the nulled date
      */
-    public static function dbDate($timestamp = false){
-        if($timestamp === false) {
+    public static function dbDate($timestamp = false)
+    {
+        if($timestamp === false)
+        {
             $timestamp = time();
         }
 
         return date('Y-m-d H:i:s', $timestamp);
+    }
+
+    public static function get_platform_dir()
+    {
+        return base_path('vendor/foodsharing/platform');
     }
 
 
