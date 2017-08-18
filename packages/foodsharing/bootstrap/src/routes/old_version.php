@@ -297,7 +297,7 @@ function fs_route() {
     }
     unset($file);
     unset($files);
-    
+
 }
 
 function fs_get_platform_dir()
