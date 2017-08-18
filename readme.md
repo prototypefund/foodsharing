@@ -36,7 +36,7 @@ php artisan fs:install
 5. run dev server
 
 ```
-php artisan serv
+FS_ENV=laravel php artisan serv
 ```
 
 ### additional
