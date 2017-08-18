@@ -172,7 +172,7 @@ return [
          * Foodsharing Packages
          */
         Foodsharing\Data\DataServiceProvider::class,
-        Foodsharing\Platform\PlatformServiceProvider::class,
+        Foodsharing\Bootstrap\BootstrapServiceProvider::class,
 
 
 
