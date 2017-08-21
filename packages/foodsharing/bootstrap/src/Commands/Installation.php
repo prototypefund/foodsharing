@@ -71,7 +71,7 @@ class Installation extends Command
 
         $this->line('');
 
-        $this->line('==================================');
+        $this->line('=======================================');
         $this->info('Foodsharing installation finished!');
         $this->line('=======================================');
 

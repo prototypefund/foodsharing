@@ -41,13 +41,15 @@
         }
     },
     "scripts": {
-        "post-install-cmd": [
+        "post-dependencies-solving": [
             "php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             "php artisan key:generate",
             "chmod 775 storage/app -R",
             "chmod 775 storage/framework -R",
             "chmod 775 storage/logs -R",
-            "chmod 775 bootstrap/cache -R",
+            "chmod 775 bootstrap/cache -R"
+        ],
+        "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
             "php artisan optimize"
         ],
