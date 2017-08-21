@@ -33,11 +33,14 @@ composer install
 php artisan fs:install
 ```
 
+
 5. run dev server
 
 ```
 FS_ENV=laravel php artisan serv
 ```
+
+instead of `php artisan fs:install` you can also use the web installer http://yourdomain/install
 
 ### additional
 
