@@ -1,11 +1,8 @@
 /node_modules
 /public/hot
 /public/storage
-/public/js
-/public/css
-/public/fonts
-/public/robots.txt
-/public/favicon.ico
+/public/js/script.js
+/public/css/style.css
 /storage/*.key
 /storage/installed
 /vendor
