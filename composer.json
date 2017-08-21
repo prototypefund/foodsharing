@@ -29,6 +29,7 @@
         ],
         "psr-4": {
             "App\\": "app/",
+            "Foodsharing\\Installer\\": "packages/foodsharing/installer/src",
             "Foodsharing\\Bootstrap\\": "packages/foodsharing/bootstrap/src",
             "Foodsharing\\Data\\": "packages/foodsharing/data/src",
             "Foodsharing\\Refactor\\": "packages/foodsharing/refactor/src"

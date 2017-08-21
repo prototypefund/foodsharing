@@ -171,6 +171,7 @@ return [
         /*
          * Foodsharing Packages
          */
+        Foodsharing\Installer\InstallerServiceProvider::class,
         Foodsharing\Data\DataServiceProvider::class,
         Foodsharing\Bootstrap\BootstrapServiceProvider::class,
 
