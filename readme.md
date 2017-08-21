@@ -11,36 +11,23 @@ git clone https://github.com/foodsharing-dev/foodsharing.git
 cd foodsharing
 ```
 
-2. make laravels .env file
 
-```
-cp .env.example .env && php artisan key:generate
-```
-
-3. change mysql config in `.env` file
-
-```
-DB_HOST=127.0.0.1
-DB_DATABASE=[your database]
-DB_USERNAME=[your username]
-DB_PASSWORD=[your password]
-```
-
-4. run installation
+2. get composer dependencies
 
 ```
 composer install
-php artisan fs:install
 ```
 
 
-5. run dev server
+3. run dev server
 
 ```
 FS_ENV=laravel php artisan serv
 ```
 
-instead of `php artisan fs:install` you can also use the web installer http://yourdomain/install
+4. Go to http://localhost:8000/install
+
+instead of using web installer you can also use the command `php artisan fs:install`
 
 ### additional
 

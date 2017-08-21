@@ -63,7 +63,7 @@ return [
      */
     'final' => [
         'title' => 'Fertig!',
-        'finished' => 'Die Anwendung wurde erfolgreich Installiert.',
+        'finished' => 'Foodsharing wurde erfolgreich Installiert.',
         'exit' => 'Hier Klicken zum Beenden',
     ],
 ];
